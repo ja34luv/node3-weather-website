@@ -16,8 +16,10 @@ const forecast = (latitude, longitude, callback) => {
           body.current.temperature +
           ' degress out. It feels like ' +
           body.current.feelslike +
-          ' degress out.'
+          ' degress out. Last Updated: ' +
+          body.current.observation_time
       );
+      console.log(body);
     }
   });
 };
